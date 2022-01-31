@@ -1,0 +1,971 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+html {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    background-color: #B1A29D;
+    background-image: url('../images/design/body-final.png');
+    background-size: cover;
+    background-position: center center;
+}
+/* <img src="images/design/vector_3.png" alt="vector"> */
+.flex-container {
+    display: flex;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.site-header .container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 68px;
+    height: 52px;
+    padding: 5px;
+}
+
+/* Headeris virsus su tekstu */
+.site-header {
+    background-color: #B1A29D;
+    position: fixed;
+    width: 100%;
+    display: block;
+    top: 0;
+    z-index: 10;
+    /* box-shadow: 0px 12px 54px rgba(78, 69, 62, 0.27); */
+}
+
+
+.main-nav .flex-container {
+    list-style: none;
+}
+
+.main-nav a {
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px 17px;
+    margin: 0 5px;
+}
+
+.main-nav a:hover,
+.main-nav a:active {
+    background-color: #E4DFDC;
+    border-radius: 5px;
+    -webkit-transition: 0.55s all ease;
+    transition: 0.55s all ease;
+    transform: scale(1.005);
+    text-shadow: 0px 1px 5px rgba(107, 102, 78, 0.8);
+}
+
+
+.main-block {
+    /* position: absolute; */
+    /* align-self: center; */
+    background: #E4DFDC;
+    border: 4px solid #FFFFFF;
+    box-shadow: 0px 12px 54px rgba(78, 69, 62, 0.27);
+    border-radius: 30px;
+    margin: 0 180px;
+    margin-top: 80px;
+    
+}
+
+/* Pagrindinis blokas, nustato max (aukstis, plotis) parametrus ir jame esanciu daiktu */
+.main-block .container {
+    /* width: 900px; */
+    height: 611px;
+    margin: 0px 10px;
+    
+}
+
+.main-block .container .introduction {
+    left: 0;
+}
+
+/* Introduction */
+
+.introduction {
+    text-align: center;
+    flex-direction: column;
+    font-size: 36px;
+    align-self: center;
+}
+
+
+
+.introduction a {
+    color:#000;
+}
+
+
+/* Visit store */
+
+.visit-store {
+    max-height: 410px;
+    width: 400px;
+}
+
+.visit-store a {
+    color: #000;
+    display: block;
+    text-decoration: underline;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    padding-top: 70%;
+    filter: blur(0);
+    padding-right: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+}
+
+.visit-store a:hover {
+    opacity: 1;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.visit-store:hover {
+    transition: 0.8s;
+    transform: scale(1.15);
+}
+
+/* Visit articles */
+
+.visit-article {
+    height: 410px;
+    width: 400px;
+}
+
+.visit-article a {
+    color: #000;
+    display: block; 
+    padding-top: 70%;
+    padding-left: 10px;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    text-decoration: underline;
+}
+
+.visit-article:hover {
+    transition: 0.8s;
+    transform: scale(1.2);
+}
+
+.visit-article a:hover {
+    opacity: 1;
+    transition: 0.8s;
+    text-decoration: none;
+}
+
+/* Store */
+
+#store {
+    background: #E4DFDC;
+    border: 4px solid #FFFFFF;
+    box-shadow: 0px 12px 54px rgba(78, 69, 62, 0.27);
+    border-radius: 30px;
+    margin: 0 180px;
+    margin-top: 80px;
+    margin-bottom: 25px;
+}
+
+#store .container {
+    /* width: 900px; */
+    height: 611px;
+}
+
+
+/* Store */
+
+#store .icon {
+    width: 76px;
+    height: 30px;
+    margin: 10px;
+}
+
+/* Store Women*/
+
+.women-first h2 {
+    font-style: inherit;
+    font-size: 72px;
+    margin: -03px;
+
+}
+
+.wmns-first-text {
+    align-items: flex-start;
+    max-width: 500px;
+    text-align: left;
+}
+.wmns-first-text p{
+    opacity: 60%;
+}
+/* Pirmas paveiksliukas Air-Max */
+
+/* Mygtukas Air Max */
+
+.air-jordan-add {
+    width: 120px;
+    height: 35px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 4px;
+}
+.shoe-price {
+    padding-top: 2px;
+    font-size: 24px;
+    padding-left: 20px;
+}
+
+.shoe-wmns-first {
+    margin-top: -480px;
+    width: 42%;
+    margin-left: 500px;
+    position: absolute;
+    transform: rotate(-50deg);
+}
+/* Light Box */
+.wmns-shoes-lightbox {
+    margin-top: 85px;
+    margin-left: -118px;
+    width: 85%;
+    background: #F6F0F085;
+    border-radius: 0px 0px 30px 30px;
+}
+
+
+.wmns-row > .wmns-column {
+    padding: 0 8px;
+}
+
+.wmns-row:after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
+  
+.wmns-column {
+    /* float: left; */
+    display: inline-block;
+    width: 25%;
+
+}
+/* Backgroundas */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #B1A29D;
+    border-collapse: separate;
+    border-radius: 20px;
+  }
+
+.modal-content {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    width: 50%;
+    max-width: 800px;
+    background: #E4DFDC;
+    border: 4px solid #FFFFFF;
+    box-shadow: 0px 12px 54px rgba(78, 69, 62, 0.27);
+    border-radius: 30px;
+    border-collapse: separate;;
+}
+.close {
+    color: white;
+    position: absolute;
+    top: 100px;
+    right: 300px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+    display: none;
+  }
+
+.cursor {
+    cursor: pointer;
+}
+
+/* Next ir previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #fff;
+    font-size: 30px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  .caption-container {
+    text-align: center;
+    background-color: #E4DFDC;
+    padding: 2px 16px;
+    color: black;
+    font-style: inherit;
+    border-radius: 30px;
+  }
+
+  .wmns-demo {
+    opacity: 0.6;
+    
+  }
+  
+  .active,
+  .wmns-demo:hover {
+    opacity: 1;
+  }
+
+  img.hover-shadow {
+    transition: 0.3s;
+    
+  }
+  
+  .hover-shadow:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color:white;
+    border-radius: 6px;
+    transform: scale(1.2);
+    transition: all .5s;
+  }
+
+
+/* Nike Air Max */
+.shoe-wmns-second {
+    margin-top: -520px;
+    width: 63%;
+    margin-left: 450px;
+    transform: rotate(-45deg);
+}
+
+
+
+.wmns-second-text {
+    align-items: flex-start;
+    width: 500px;
+    text-align: left;
+}
+
+.wmns-second-text p{
+    opacity: 60%;
+}
+
+        /* Yeezy */
+.shoe-wmns-third {
+    margin-top: -300px;
+    transform: rotate(-29deg);
+    width: 70%;
+    margin-left: 420px;
+}
+
+.wmns-third-text {
+    align-items: flex-start;
+    width: 500px;
+    text-align: left;
+}
+.wmns-third-text p{
+    opacity: 60%;
+}
+
+.wmns-buttons button{
+    display:flex;
+    /* flex-direction: row; */
+
+}
+
+/* Women Slidero mygtukai */
+
+.demo {
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    padding: 20px 40px;
+    background-color: #E4DFDC;
+    font-size: 12px;
+    -webkit-transition: 1s all ease;
+        transition: 1s all ease;
+}
+
+.demo-current {
+    border-left: 2.5px solid black;
+    font-size:24px;
+}
+.demo:hover {
+    border-left: 2.5px solid black;
+    font-size:24px;
+    cursor: pointer;
+    transition: 0.2s;
+    text-decoration: underline;
+}
+
+/* Content Slider */
+
+.store-content-slider-buttons{
+    padding-left: 75px;
+}
+
+.content-slider-button {
+    text-transform: capitalize;
+    color: #000;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px 17px;
+    margin: 0 5px;
+    font-style: inherit;
+    border:none;
+    background: none;
+
+}
+
+.content-slider-button:hover {
+    border-radius: 5px;
+    text-decoration: underline;
+    transition: 0.3s;
+    font-weight: bold;
+    transform: scale(1.005);
+    text-shadow: 0px 1px 5px rgba(107, 102, 78, 0.8);
+    cursor: pointer;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+}
+.content-active {
+    border-radius: 5px;
+    text-decoration: underline;
+    transition: 0.3s;
+    font-weight: bold;
+    transform: scale(1.005);
+    text-shadow: 0px 1px 5px rgba(107, 102, 78, 0.8);
+    cursor: pointer;
+}
+
+
+/* Scrollinimas */
+
+html{scroll-behavior:smooth}
+
+
+/* Blog */
+
+#blogs {
+    /* position: absolute; */
+    /* align-self: center; */
+    background: #E4DFDC;
+    border: 4px solid #FFFFFF;
+    box-shadow: 0px 12px 54px rgba(78, 69, 62, 0.27);
+    border-radius: 30px;
+    margin: 0 180px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* Pagrindinis blokas, nustato max (aukstis, plotis) parametrus ir jame esanciu daiktu */
+#blogs .container {
+    /* width: 900px; */
+    height: 611px;
+    margin: 0px 10px;
+    
+}
+
+/* Pirmas blogo straipsnis */ 
+
+.first-blog {
+    flex-direction: row;
+    height: 250px;
+}
+
+
+.first-blog-img {
+    width: 350px;
+    height: 250px;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-left: -5px;
+}
+.first-blog-photo {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-image: url('../images/blog/donda.jpg');
+    background-position: center;
+    background-size: cover;
+    transition: 1.2s;
+}
+
+.first-blog a:hover .first-blog-photo {
+    transform: scale(1.1);
+}
+
+.first-blog a {
+    position: absolute;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.first-blog-text h2{
+    text-decoration: none;
+    margin-left: 10px;
+    font-style:'Inter', sans-serif;
+}
+
+.first-blog-text p {
+    margin-left: 10px;
+    margin-top: 205px;
+    text-transform: uppercase;
+}
+/* Second Blog*/
+.second-blog {
+    flex-direction: row;
+    height: 250px;
+}
+
+.second-blog-img {
+    width: 350px;
+    height: 250px;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-left: -5px;
+}
+
+.second-blog-photo {
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/blog/concepts-nike-air-max-1.jpg');
+    background-position: center;
+    background-size: cover;
+    transition: 1.2s;
+}
+
+
+
+.second-blog a:hover .second-blog-photo {
+    transform: scale(1.1);
+}
+
+.second-blog a {
+    position: absolute;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+    margin-top: 300px;
+}
+
+.second-blog-text h2, p {
+    padding-left: 10px;
+    font-style:'Inter', sans-serif;
+}
+
+.second-blog-text p {
+    padding-top: 185px;
+    text-transform: uppercase;
+}
+
+/* About Us */
+
+#about {
+background: #E4DFDC;
+border: 4px solid #FFFFFF;
+box-shadow: 0px 12px 54px rgba(78, 69, 62, 0.27);
+border-radius: 30px;
+margin: 0 180px;
+margin-top: 40px;
+margin-bottom: 20px;
+}
+
+.about-us {
+    height: 611px;
+    margin: 0px 10px;
+    padding-top: 250px;
+}
+
+#about .flex-container {
+    flex-direction: row;
+}
+
+.empty-block-about {
+    /* font-size: 52px;
+    text-align: center;
+    text-decoration: underline; */
+    box-sizing: border-box;
+    width: 1800px;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+.about-text {
+    font-size: 42px;
+    display:block;
+    text-align: center;
+    position: relative;
+    letter-spacing: -0.03em;
+    border-bottom: 0.1em solid;
+}
+
+
+/* Contact */
+
+#contact {
+    background: #E4DFDC;
+    border: 4px solid #FFFFFF;
+    box-shadow: 0px 12px 54px rgba(78, 69, 62, 0.27);
+    border-radius: 30px;
+    margin: 0 180px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.contact-body {
+    height: 611px;
+    margin: 0px 10px;
+    padding-top: 100px;
+}
+
+#contact {
+    padding: 5px;
+}
+
+#contact #contact-submit:hover {
+    cursor: pointer;
+}
+
+.contact-form {
+    margin-left: -630px;
+}
+
+.social-media {
+    margin-top: 50px;
+    margin-left: -450px;
+    width: 260px;
+}
+
+.follow-us {
+    text-align: center;
+}
+
+
+.media-types a {
+    text-decoration: none;
+    color:#000;
+}
+
+.media-types a:hover {
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.let-us-know h3 {
+    font-size: 42px;
+}
+
+.contact-image {
+    height: 520px;
+    width: 400px;
+    overflow: hidden;
+    margin-top: 45px;
+    margin-left: 50px;
+}
+
+.contact-image-store {
+    background-image: url('../images/office.png');
+    background-position: center;
+    background-size: cover;
+    transition: 1.2s;
+    height: 100%;
+    width: 100%;
+}
+
+.contact-image-store:hover {
+    transform: scale(1.2);
+}
+
+/* article-fix */
+#article-fix {
+    min-height: 25px;
+}
+
+#about-us-fix {
+    min-height: 25px;
+}
+
+
+/* /* iPhone 12 Pro width 390  */
+
+
+@media all and (min-height: 844px) {
+    .site-header .container {
+        align-items: center;
+    }
+    .site-header {
+        width: 380px;
+        display: block;
+        top: 0;
+        z-index: 10;
+    }
+
+    .container {
+        max-width: 380px;
+        margin: 0 auto;
+        padding: 0 5px;
+    }
+    .main-block {
+        margin: 0 20px;
+        margin-top: 80px;
+    }
+    
+
+    .main-nav a {
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 5px 5px;
+    margin: 0 5px;
+    }
+
+    .introduction {
+        flex-direction: row;
+        font-size: 20px;
+        text-align: center;
+    }
+    .main-block .container {
+        /* width: 900px; */
+        height: 500px;
+        margin: 0px 10px;
+        
+    }
+    .visit-store {
+        max-height: 350px;
+        width: 200px;
+        margin-top: -40px;
+        padding-left: 40px;
+    }
+    .visit-article a {
+        margin-top: 260px;
+        margin-left: -140px;
+        text-align: center;
+        width: 150px;
+    }
+
+    #store {
+        background: #E4DFDC;
+        border: 4px solid #FFFFFF;
+        box-shadow: 0px 12px 54px rgba(78, 69, 62, 0.27);
+        border-radius: 30px;
+        margin: 0 20px;
+        margin-top: 80px;
+        margin-bottom: 25px;
+    }
+    
+    #store .container {
+        /* width: 900px; */
+        height: 500px;
+    }
+
+    .shoe-wmns-second {
+        margin-top: 20px;
+        width: 40%;
+        margin-left: 0px;
+        transform: rotate(-15deg);
+    }
+
+    .women-first h2 {
+        font-style: inherit;
+        font-size: 24px;
+        margin: -03px;
+        margin-top: 5px
+    }
+    .wmns-second-text p {
+        max-width: 200px;
+        font-size: 12px;
+        align-items: none;
+    }
+    .air-jordan-add {
+        width: 90px;
+        height: 35px;
+    }
+    .shoe-price {
+        padding-top: 2px;
+        font-size: 20px;
+        padding-left: 20px;
+    }
+
+    .wmns-shoes-lightbox {
+        margin-top: 120px;
+        margin-left: -100px;
+        width: 69%;
+        background: #F6F0F085;
+        border-radius: 0px 0px 30px 30px;
+        display:none;
+    }
+
+    #blogs {
+        /* position: absolute; */
+        /* align-self: center; */
+        background: #E4DFDC;
+        border: 4px solid #FFFFFF;
+        box-shadow: 0px 12px 54px rgba(78, 69, 62, 0.27);
+        border-radius: 30px;
+        margin: 0 20px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    #blogs .container {
+        /* width: 900px; */
+        height: 500px;
+        margin: 0px 10px;
+    }
+
+    .first-blog {
+        flex-direction: row;
+        height: 50px;
+    }
+
+    .first-blog-img {
+        width: 250px;
+        height: 200px;
+        overflow: hidden;
+        margin-top: 20px;
+        margin-left: -5px;
+    }
+
+    .second-blog-img {
+        width: 240px;
+        height: 200px;
+        overflow: hidden;
+        margin-top: -10px;
+        margin-left: -5px;
+    }
+    .second-blog-text p {
+        padding-top: 185px;
+        font-size:0px;
+        text-transform: uppercase;
+    }
+    .second-blog-text h2 {
+        padding-left: 10px;
+        font-style:'Inter', sans-serif;
+        margin-top: -15px;
+    }
+    .first-blog-text p {
+        margin-left: 10px;
+        margin-top: 205px;
+        font-size: 0px;
+        text-transform: uppercase;
+    }
+
+    #about {
+        background: #E4DFDC;
+        border: 4px solid #FFFFFF;
+        box-shadow: 0px 12px 54px rgba(78, 69, 62, 0.27);
+        border-radius: 30px;
+        margin: 0 20px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        }
+        
+        .about-us {
+            height: 950px;
+            margin: 0px 10px;
+            padding-top: 20px;
+        }
+        .about-text {
+            font-size: 26px;
+            display:block;
+            text-align: center;
+            position: relative;
+            letter-spacing: -0.03em;
+            border-bottom: 0.1em solid;
+        }
+        #contact {
+            background: #E4DFDC;
+            border: 4px solid #FFFFFF;
+            box-shadow: 0px 12px 54px rgba(78, 69, 62, 0.27);
+            border-radius: 30px;
+            margin: 0 20px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        
+        .contact-body {
+            height: 400px;
+            margin: 0px 10px;
+            padding-top: 100px;
+        }
+        .contact-form {
+            margin-left: -335px;
+        }
+
+
+        .let-us-know h3 {
+            font-size: 24px;
+            text-align: center;
+            width: 320px;
+        }
+        
+}

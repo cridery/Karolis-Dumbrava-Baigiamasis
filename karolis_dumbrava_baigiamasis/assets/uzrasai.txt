@@ -1,0 +1,24 @@
+Fonts:
+
+	Tekstas bato pavadinimo: 	Inter / Extra Bold / 72px
+	Tekstas po bato pavadinimo: 	Inter / Light / 18px 
+	Kaina: 				Inter / Semi Bold / 30px
+	Wath Video : 			Inter / Medium / 20 px
+
+Icons:
+	<script src="https://kit.fontawesome.com/46272da23e.js" crossorigin="anonymous"></script>
+
+	Play Mygtukas: 			<i class="fa-thin fa-play"></i> 
+
+
+
+Colors:
+
+	Tekstas bato pavadinimo: 	2D2B2C
+	Tekstas po bato pavadinimo: 	000000
+	Kaina:				000000
+	Watch Video : 			877C78
+	Background : 			B1A29D
+	Add to Bag :			2D2B2C, FFFFFF
+	Apatinis batu pasirinkimas: 	F6F0F0
+	Batu background: 		E4DFDC
